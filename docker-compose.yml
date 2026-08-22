@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  networksecurity:
+    build:
+      context: .
+    container_name: networksecurity-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      MONGODB_URL_KEY: ${MONGODB_URL_KEY}
+      APP_PORT: ${APP_PORT:-8000}
