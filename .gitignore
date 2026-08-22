@@ -1,0 +1,50 @@
+# Python environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+*.pem
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE/editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Build and packaging output
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Local artifacts and generated ML outputs
+.Artifacts/
+Artifacts/
+logs/
+mlruns/
+final_model/
+prediction_output/
+*.log
+
+# Data science local outputs
+valid_data/
+Network_Data/
+*.csv
+
+# Docker and local runtime
+*.local
+*.tmp
+.cache/
